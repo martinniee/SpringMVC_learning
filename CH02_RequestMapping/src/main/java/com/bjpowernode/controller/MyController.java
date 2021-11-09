@@ -13,32 +13,18 @@ import org.springframework.web.servlet.ModelAndView;
  控制器定义: 也称后端控制器(back controller),自定义类处理请求
  位置: 位于类上,表示创建这个类对象,放置在springmvc容器中
  结果: 添加注解 @Controller后,  MyController类作为控制器放置在springmvc容器中
+
+
+@RequestMapping
+    属性: value,表示所有请求地址的公共前缀,相当于是模块名称
  */
 
+
 @Controller
+@RequestMapping(value = "/student")
 public class MyController {
 
-    /*
-    2、定义方法
-        名称: 控制器方法,能处理请求的方法
-        概念: springmvc框架: 使用控制器类中的方法处理请求
-        特点:
-            方法形参: 表示请求中的参数
-            返回值: 表示此时请求的处理结果 ModelAndView
-
-
-    3、使用注解 @RequestMappng(请求映射注解)
-        属性: value,请求中的uri地址，唯一值,以"/"开头
-        位置: 方法上(必须),类定义上(可选)
-        作用: 将指定的请求交给指定的方法处理,设置的注解的方法就是「指定」的方法,等同url-pattern
-        实例分析:
-            /some.do: "/" 表示根, "some.do" 表示uri
-            如果请求地址访问资源是 http://端口/虚拟目录/some.do,则 根据映射,会调用doSome()方法
-            此时的请求是通过超链接 <a href="some.do">发起some.do请求</a> 发起的
-     */
-    // 此时的doSome() 相当于servlet的 doGet()
-
-    @RequestMapping(value = {"/some.do","first.do"})
+    @RequestMapping(value = {"/some.do","/first.do"})
     public ModelAndView doSome(){
 
         /*
@@ -79,7 +65,7 @@ public class MyController {
 
          */
     }
-    @RequestMapping(value = {"/other.do","/test/second.do"})
+    @RequestMapping(value = {"/other.do","/second.do"})
     public ModelAndView doOther(){
 
         System.out.println("执行了other.do请求的doOther()方法");
