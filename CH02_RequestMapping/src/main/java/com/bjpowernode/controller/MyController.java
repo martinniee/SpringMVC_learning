@@ -2,7 +2,12 @@ package com.bjpowernode.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * @author nathan
@@ -21,10 +26,19 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 @Controller
-@RequestMapping(value = "/student")
+
 public class MyController {
 
-    @RequestMapping(value = {"/some.do","/first.do"})
+
+    /*
+    属性
+        method:
+            表示指定请求的方法,使用RequestMethod类的枚举值
+            实例: 如get请求方式,RequestMethod.GET
+     */
+
+    // 指定some.do使用get请求方式
+    @RequestMapping(value ="/some.do",method = RequestMethod.GET)
     public ModelAndView doSome(){
 
         /*
@@ -65,7 +79,10 @@ public class MyController {
 
          */
     }
-    @RequestMapping(value = {"/other.do","/second.do"})
+
+    // 如果请求方式不一样,则错误码是 405,表示请求方式不支持
+    //指定other.do的请求方式为post
+    @RequestMapping(value = {"/other.do","/second.do"},method = RequestMethod.POST)
     public ModelAndView doOther(){
 
         System.out.println("执行了other.do请求的doOther()方法");
@@ -73,6 +90,24 @@ public class MyController {
         // 添加数据
         mv.addObject("msg","执行了other.do请求");
         mv.addObject("fun","执行了doOther()方法");
+        mv.setViewName("other");
+
+
+        // 返回结果
+        return mv ;
+    }
+
+    // 不指定Method属性,请求方式无限制
+    @RequestMapping(value = "/first.do")
+    public ModelAndView doFirst(HttpServletRequest request, HttpServletResponse response, HttpSession session){
+
+        System.out.println("执行了doFirst()方法");
+
+        String name = request.getParameter("name");
+        ModelAndView mv = new ModelAndView();
+        // 添加数据
+        mv.addObject("msg","执行了first.do请求,name=" + name);
+        mv.addObject("fun","执行了doFirst()方法");
         mv.setViewName("other");
 
 
