@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/CH04_return-result/CH04_return-result.iml" filepath="$PROJECT_DIR$/CH04_return-result/CH04_return-result.iml" />
       <module fileurl="file://$PROJECT_DIR$/CH05_url-pattern/CH05_url-pattern.iml" filepath="$PROJECT_DIR$/CH05_url-pattern/CH05_url-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/../CH06_SSM/CH06_SSM.iml" filepath="$PROJECT_DIR$/../CH06_SSM/CH06_SSM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CH06_path/CH06_path.iml" filepath="$PROJECT_DIR$/CH06_path/CH06_path.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch07-ssm/ch07-ssm.iml" filepath="$PROJECT_DIR$/ch07-ssm/ch07-ssm.iml" />
     </modules>
   </component>
 </project>

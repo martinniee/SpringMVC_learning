@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+<!--    springmvc的配置文件-->
+
+<!--    声明组件扫描器-->
+    <context:component-scan base-package="com.bjpowernode.controller" />
+
+<!--    声明视图解析器 -->
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<!--         前缀: 指定视图文件所在的路径-->
+        <property name="prefix" value="/WEB-INF/view/" />
+<!--         后缀: 指定视图的扩展名-->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+<!--    声明注解驱动
+            默认情况下: resources与 @RequestMapping注解有冲突
+            解决方案: 添加注解驱动 <mvc:annotation-driven/>-
+-->
+    <mvc:annotation-driven/>
+
+<!--    声明静态资源的第二种方式
+        1、属性说明
+            mapping: 访问静态资源的uri地址,可以使用通配符(**)
+                **: 表示任意目录和子目录和资源名称,如 "项目位置/../../../资源文件"
+
+            location: 静态资源在项目中的位置,不要使用/WEB-INF目录
+        2、使用说明
+            格式:
+                <mvc:resources mapping="/资源目录访问地址/**" location="/项目中资源文件夹名/" />
+            实例:
+                 <mvc:resources mapping="/images/**" location="/images/" />
+
+             说明: 表示请求images地址下的资源(**),就实际会到项目中的根目录"/"下(webapp)的images目录下寻找对于资源
+               如果访问http://localhost:9959/CH05_url_pattern/images/bishop-elizabeth-.png,其中含有 "/images/bishop-elizabeth-.png"
+               就会去找项目中/images/下对应的"bishop-elizabeth-.png"图片文件,后响应
+
+
+-->
+<!--   <mvc:resources mapping="/image/**" location="/images/" />-->
+<!--   <mvc:resources mapping="/html/**" location="/html/" />-->
+<!--   <mvc:resources mapping="/js/**" location="/js/" />-->
+    
+<!--    一行设置静态资源(在webapp下创建static目录-->
+    
+    <mvc:resources mapping="/static/**" location="/static/" />
+
+</beans>

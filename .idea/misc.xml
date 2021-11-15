@@ -8,6 +8,8 @@
     <file type="web" url="file://$PROJECT_DIR$/CH03_receive-param" />
     <file type="web" url="file://$PROJECT_DIR$/CH04_return-result" />
     <file type="web" url="file://$PROJECT_DIR$/CH05_url-pattern" />
+    <file type="web" url="file://$PROJECT_DIR$/CH06_path" />
+    <file type="web" url="file://$PROJECT_DIR$/ch07-ssm" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -20,6 +22,8 @@
         <option value="$PROJECT_DIR$/CH04_return-result/pom.xml" />
         <option value="$PROJECT_DIR$/CH05_url-pattern/pom.xml" />
         <option value="$PROJECT_DIR$/../CH06_SSM/pom.xml" />
+        <option value="$PROJECT_DIR$/ch07-ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/CH06_path/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
