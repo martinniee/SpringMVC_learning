@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CH04_return-result:war">
+    <output-path>$PROJECT_DIR$/CH04_return-result/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>CH04_return-result</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="CH04_return-result-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="CH04_return-result:war exploded" />
+    </root>
+  </artifact>
+</component>

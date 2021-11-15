@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../CH06_SSM" />
+    <file type="web" url="file://$PROJECT_DIR$/ch01-springmvc" />
+    <file type="web" url="file://$PROJECT_DIR$/CH01_SpringMVC" />
+    <file type="web" url="file://$PROJECT_DIR$/CH02_RequestMapping" />
+    <file type="web" url="file://$PROJECT_DIR$/CH03_receive-param" />
+    <file type="web" url="file://$PROJECT_DIR$/CH04_return-result" />
+    <file type="web" url="file://$PROJECT_DIR$/CH05_url-pattern" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../ch01-springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/CH01_SpringMVC/pom.xml" />
+        <option value="$PROJECT_DIR$/ch01-springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/CH02_RequestMapping/pom.xml" />
+        <option value="$PROJECT_DIR$/CH03_receive-param/pom.xml" />
+        <option value="$PROJECT_DIR$/CH04_return-result/pom.xml" />
+        <option value="$PROJECT_DIR$/CH05_url-pattern/pom.xml" />
+        <option value="$PROJECT_DIR$/../CH06_SSM/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/ch01-springmvc/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

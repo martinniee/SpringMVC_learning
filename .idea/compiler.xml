@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="CH05_url-pattern" />
+        <module name="CH03_receive-param" />
+        <module name="CH04_return-result" />
+        <module name="CH01_SpringMVC" />
+        <module name="CH06_SSM" />
+        <module name="CH02_RequestMapping" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ch01-springmvc" target="1.8" />
+      <module name="CH01-SpringMVC" target="15" />
+      <module name="CH01_SpringMVC" target="1.8" />
+      <module name="CH02_RequestMapping" target="1.8" />
+      <module name="CH03_receive-param" target="1.8" />
+      <module name="CH04_return-result" target="1.8" />
+      <module name="CH05_url-pattern" target="1.8" />
+      <module name="CH06_SSM" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
