@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="CH08_forward_redirect" />
         <module name="CH05_url-pattern" />
         <module name="CH03_receive-param" />
         <module name="CH01_SpringMVC" />
-        <module name="CH06_SSM" />
         <module name="CH06_path" />
         <module name="CH02_RequestMapping" />
         <module name="CH04_return-result" />
@@ -28,6 +28,7 @@
       <module name="CH06_path" target="1.8" />
       <module name="CH06_SSM" target="1.8" />
       <module name="ch07-ssm" target="1.8" />
+      <module name="CH08_forward_redirect" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

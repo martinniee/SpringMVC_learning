@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/../CH06_SSM/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../CH06_SSM/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CH01_SpringMVC/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CH01_SpringMVC/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CH02_RequestMapping/src/main/java" charset="UTF-8" />
@@ -15,6 +13,8 @@
     <file url="file://$PROJECT_DIR$/CH05_url-pattern/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CH06_path/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/CH06_path/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CH08_forward_redirect/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/CH08_forward_redirect/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch07-ssm/src/main/java" charset="UTF-8" />
   </component>
 </project>

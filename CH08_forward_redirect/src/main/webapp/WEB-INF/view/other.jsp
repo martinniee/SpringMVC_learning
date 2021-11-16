@@ -7,7 +7,8 @@
 </head>
 <body>
 
-<h3>这是/WEB-INF/view/的show.jsp视图文件</h3>
-
+<h1>/WEB-INF/view/other.jsp用于显示request作用域中的数据</h1>
+<h3>mgs: ${msg}</h3>
+<h3>fun: ${fun}</h3>
 </body>
 </html>

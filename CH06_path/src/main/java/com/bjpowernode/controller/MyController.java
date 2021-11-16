@@ -19,16 +19,13 @@ import java.util.List;
 
 public class MyController {
 
-    @RequestMapping(value ="/some")
-    public ModelAndView doReturnStringView1(String name, Integer age){
+    @RequestMapping(value ="test/some.do")
+    public ModelAndView doSome(){
 
-        System.out.println("执行了Mycontroller的doReturnStringView1()方法name= " + name + " age=" + age);
+        System.out.println("执行了Mycontroller的doSome()方法");
 
         ModelAndView mv = new ModelAndView();
-        mv.addObject("myname",name);
-        mv.addObject("myage",age);
-
-        mv.setViewName("show");
+        mv.setViewName("/index.jsp");
         return mv; // 返回视图
 
     }

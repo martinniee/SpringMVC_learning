@@ -10,6 +10,7 @@
     <file type="web" url="file://$PROJECT_DIR$/CH05_url-pattern" />
     <file type="web" url="file://$PROJECT_DIR$/CH06_path" />
     <file type="web" url="file://$PROJECT_DIR$/ch07-ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/CH08_forward_redirect" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -24,6 +25,7 @@
         <option value="$PROJECT_DIR$/../CH06_SSM/pom.xml" />
         <option value="$PROJECT_DIR$/ch07-ssm/pom.xml" />
         <option value="$PROJECT_DIR$/CH06_path/pom.xml" />
+        <option value="$PROJECT_DIR$/CH08_forward_redirect/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
