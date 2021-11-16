@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/CH05_url-pattern/CH05_url-pattern.iml" filepath="$PROJECT_DIR$/CH05_url-pattern/CH05_url-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/CH06_path/CH06_path.iml" filepath="$PROJECT_DIR$/CH06_path/CH06_path.iml" />
       <module fileurl="file://$PROJECT_DIR$/CH08_forward_redirect/CH08_forward_redirect.iml" filepath="$PROJECT_DIR$/CH08_forward_redirect/CH08_forward_redirect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CH09_exception_handler/CH09_exception_handler.iml" filepath="$PROJECT_DIR$/CH09_exception_handler/CH09_exception_handler.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch07-ssm/ch07-ssm.iml" filepath="$PROJECT_DIR$/ch07-ssm/ch07-ssm.iml" />
     </modules>
   </component>
