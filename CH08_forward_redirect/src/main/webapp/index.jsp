@@ -4,13 +4,15 @@
     <title>请求方式</title>
 </head>
 <body>
-    <a href="first.do">发起other.do的get请求</a>
+    <a href="doforward.do">发起doforward.do的请求</a>
     <br/>
     <br/>
-    <form action="first.do" method="post">
-        <input type="submit" value="post请求">
-    </form>
+    <p>重定向redirect</p>
 
-
+<form action="doRedirect.do">
+    姓名: <input type="text" name="name"> <br/>
+    年龄: <input type="text" name="age"> <br/>
+    提交: <input type="submit" value="提交"> <br/>
+</form>
 </body>
 </html>

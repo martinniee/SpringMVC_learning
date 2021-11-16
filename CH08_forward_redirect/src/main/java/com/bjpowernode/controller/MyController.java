@@ -29,90 +29,49 @@ import javax.servlet.http.HttpSession;
 
 public class MyController {
 
-
     /*
-    属性
-        method:
-            表示指定请求的方法,使用RequestMethod类的枚举值
-            实例: 如get请求方式,RequestMethod.GET
+
+      使用控制器方法返回值ModelAndView实现转发forward
+        格式: ModelAndView对象.setViewName("forward: 视图完整路径")
+        实例: mv.setViewName("forward: /WEB-INF/view/show.jsp")
+
+      forward特点: 单独生效,不合视图解析冲突,相当忽略视图解析器
+
      */
 
-    // 指定some.do使用get请求方式
-    @RequestMapping(value ="/some.do",method = RequestMethod.GET)
-    public ModelAndView doSome(){
+    @RequestMapping(value ="/doforward.do")
+    public ModelAndView doForward(){
 
-        /*
-        4、创建ModelAndView
-
-         */
-        System.out.println("执行了do.some请求的doSome()方法");
+        System.out.println("执行了doforward.do请求的doForward()方法");
         ModelAndView mv = new ModelAndView();
         // 添加数据
         mv.addObject("msg","处理了some.do请求");
         mv.addObject("fun","执行了doSome()方法");
 
-        // 指定显示数据的视图
-//        mv.setViewName("/show.jsp");
-//        mv.setViewName("/WEB-INF/view/show.jsp");
+       // 使用forward显式转视图(因为,不用forward,框架也会进行转发操作)
+        mv.setViewName("forward:/WEB-INF/view/show.jsp");
 
-        /*
-         当配置了视图解析器后,就可以使用视图文件的文件名做作为视图名使用,此时的视图名称为「视图逻辑名称」
-         使用视图解析器后,框架会使用配置文件将设置的是视图解析器中的前缀和后缀与视图逻辑名称进行拼接
-         形成更完整的 视图文件路径
-         */
-        // /WEB-INF/view/ + show + .jsp
-        // 得到了  /WEB-INF/view/show.jsp
-        mv.setViewName("show");
-
-
-        // 返回结果
         return mv ;
-        /*
-         ModelAndView使用原理:
-            当框架调用完doSome()方法后,得到返回的ModelAndView
-            框架会在后续的处理逻辑中处理mv对象中的数据和视图
-                情况1: 对数据执行 request.setAttribute("msg","处理了some.do请求");
-                    即把数据交给了request(放入到request的作用域)
-                    【自动的过程】: 当添加数据到ModelAndView,自动将数据放入request作用域
-                情况2: 对视图进行转发操作
-                    等同request.getRequestDispatcher(".show.jsp").forward(..);
-
-         */
     }
 
-    // 如果请求方式不一样,则错误码是 405,表示请求方式不支持
-    //指定other.do的请求方式为post
-    @RequestMapping(value = {"/other.do","/second.do"},method = RequestMethod.POST)
-    public ModelAndView doOther(){
+    /*
+      需求: 控制器方法返回值为ModelAndView时实现重定向 redirect
+        格式: ModelAndView对象.setViewName("redirect: 视图文件完整路径")
+        实例: mv.setViewName("redirect: /WEB-INF/view/show.jsp")
+        redirect特点: 和forward类似不和视图解析器工作,如同不存在视图解析器
+     */
+    @RequestMapping("/doRedirect.do")
+    public ModelAndView doRedirect(String name, Integer age){
 
-        System.out.println("执行了other.do请求的doOther()方法");
+        System.out.println("doRedirect, name=" + name + " ,age=" + age);
         ModelAndView mv = new ModelAndView();
-        // 添加数据
-        mv.addObject("msg","执行了other.do请求");
-        mv.addObject("fun","执行了doOther()方法");
-        mv.setViewName("other");
+        mv.addObject("myname",name);
+        mv.addObject("myage",age);
+        // 重定向到视图
+        mv.setViewName("redirect:/other.jsp");
+
+        return mv;
 
 
-        // 返回结果
-        return mv ;
     }
-
-    // 不指定Method属性,请求方式无限制
-    @RequestMapping(value = "/first.do")
-    public ModelAndView doFirst(HttpServletRequest request, HttpServletResponse response, HttpSession session){
-
-        System.out.println("执行了doFirst()方法");
-
-        String name = request.getParameter("name");
-        ModelAndView mv = new ModelAndView();
-        // 添加数据
-        mv.addObject("msg","执行了first.do请求,name=" + name);
-        mv.addObject("fun","执行了doFirst()方法");
-        mv.setViewName("other");
-
-
-        // 返回结果
-        return mv ;
-    }
-
 }
