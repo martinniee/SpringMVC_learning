@@ -15,11 +15,13 @@
         <module name="CH02_RequestMapping" />
         <module name="CH04_return-result" />
         <module name="ch07-ssm" />
+        <module name="CH010_interceptor" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CH01-SpringMVC" target="15" />
       <module name="ch01-springmvc" target="1.8" />
+      <module name="CH010_interceptor" target="1.8" />
       <module name="CH01_SpringMVC" target="1.8" />
       <module name="CH02_RequestMapping" target="1.8" />
       <module name="CH03_receive-param" target="1.8" />

@@ -15,7 +15,7 @@
             loadStudentData();
 
             $("#btnLoader").click(function(){
-                //loadStudentData();
+                loadStudentData();
                 alert($("#country > option:selected").val());
 
                 alert($("#country > option:selected").text());
@@ -29,7 +29,7 @@
                 dataType:"json",
                 success:function(data){
                     //清除旧的数据
-                    $("#info").html("");
+                    // $("#info").html("");
                     //增加新的数据
                     $.each(data,function(i,n){
                         $("#info").append("<tr>")

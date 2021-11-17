@@ -42,6 +42,8 @@ public class StudentController {
     public List<Student> queryStudent(){
         //参数检查， 简单的数据处理
         List<Student> students = service.findStudents();
+        System.out.println("queryStudent()--------------");
+        System.out.println("students" + students);
         return students;
     }
 }

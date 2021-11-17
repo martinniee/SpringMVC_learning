@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../CH06_SSM" />
     <file type="web" url="file://$PROJECT_DIR$/ch01-springmvc" />
+    <file type="web" url="file://$PROJECT_DIR$/CH010_interceptor" />
     <file type="web" url="file://$PROJECT_DIR$/CH01_SpringMVC" />
     <file type="web" url="file://$PROJECT_DIR$/CH02_RequestMapping" />
     <file type="web" url="file://$PROJECT_DIR$/CH03_receive-param" />
@@ -28,6 +29,7 @@
         <option value="$PROJECT_DIR$/CH06_path/pom.xml" />
         <option value="$PROJECT_DIR$/CH08_forward_redirect/pom.xml" />
         <option value="$PROJECT_DIR$/CH09_exception_handler/pom.xml" />
+        <option value="$PROJECT_DIR$/CH010_interceptor/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
