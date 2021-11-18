@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CH010_interceptor/CH010_interceptor.iml" filepath="$PROJECT_DIR$/CH010_interceptor/CH010_interceptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/CH01_SpringMVC/CH01_SpringMVC.iml" filepath="$PROJECT_DIR$/CH01_SpringMVC/CH01_SpringMVC.iml" />
       <module fileurl="file://$PROJECT_DIR$/CH02_RequestMapping/CH02_RequestMapping.iml" filepath="$PROJECT_DIR$/CH02_RequestMapping/CH02_RequestMapping.iml" />
       <module fileurl="file://$PROJECT_DIR$/CH03_receive-param/CH03_receive-param.iml" filepath="$PROJECT_DIR$/CH03_receive-param/CH03_receive-param.iml" />
@@ -11,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/CH06_path/CH06_path.iml" filepath="$PROJECT_DIR$/CH06_path/CH06_path.iml" />
       <module fileurl="file://$PROJECT_DIR$/CH08_forward_redirect/CH08_forward_redirect.iml" filepath="$PROJECT_DIR$/CH08_forward_redirect/CH08_forward_redirect.iml" />
       <module fileurl="file://$PROJECT_DIR$/CH09_exception_handler/CH09_exception_handler.iml" filepath="$PROJECT_DIR$/CH09_exception_handler/CH09_exception_handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CH11_interceptor2/CH11_interceptor2.iml" filepath="$PROJECT_DIR$/CH11_interceptor2/CH11_interceptor2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CH12_permissioninterceptor/CH12_permissioninterceptor.iml" filepath="$PROJECT_DIR$/CH12_permissioninterceptor/CH12_permissioninterceptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch07-ssm/ch07-ssm.iml" filepath="$PROJECT_DIR$/ch07-ssm/ch07-ssm.iml" />
     </modules>
   </component>

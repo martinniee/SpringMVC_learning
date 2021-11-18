@@ -3,7 +3,6 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/../CH06_SSM" />
     <file type="web" url="file://$PROJECT_DIR$/ch01-springmvc" />
-    <file type="web" url="file://$PROJECT_DIR$/CH010_interceptor" />
     <file type="web" url="file://$PROJECT_DIR$/CH01_SpringMVC" />
     <file type="web" url="file://$PROJECT_DIR$/CH02_RequestMapping" />
     <file type="web" url="file://$PROJECT_DIR$/CH03_receive-param" />
@@ -13,6 +12,9 @@
     <file type="web" url="file://$PROJECT_DIR$/ch07-ssm" />
     <file type="web" url="file://$PROJECT_DIR$/CH08_forward_redirect" />
     <file type="web" url="file://$PROJECT_DIR$/CH09_exception_handler" />
+    <file type="web" url="file://$PROJECT_DIR$/CH10_interceptor" />
+    <file type="web" url="file://$PROJECT_DIR$/CH11_interceptor2" />
+    <file type="web" url="file://$PROJECT_DIR$/CH12_permissioninterceptor" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -30,6 +32,8 @@
         <option value="$PROJECT_DIR$/CH08_forward_redirect/pom.xml" />
         <option value="$PROJECT_DIR$/CH09_exception_handler/pom.xml" />
         <option value="$PROJECT_DIR$/CH010_interceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/CH11_interceptor2/pom.xml" />
+        <option value="$PROJECT_DIR$/CH12_permissioninterceptor/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

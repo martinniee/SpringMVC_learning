@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CH12_permissioninterceptor:war">
+    <output-path>$PROJECT_DIR$/CH12_permissioninterceptor/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>CH12_permissioninterceptor</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="CH12_permissioninterceptor-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="CH12_permissioninterceptor:war exploded" />
+    </root>
+  </artifact>
+</component>
